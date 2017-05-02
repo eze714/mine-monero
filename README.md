@@ -1,2 +1,0 @@
-# newTab
-beatiful newTab page
