@@ -1,5 +1,8 @@
-body {
-  background: url("http://cdn.leoh.io/images/base_zero/image_217.jpg");
+img {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #clock {
   color: white;
