@@ -14,18 +14,3 @@ html {
   font-weight: bold;
   font-family: helvetica;
 }
-#todoList {
-  display: none;
-  width: 290px;
-  max-height: 350px;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  bottom: 50px;
-  right: 28px;
-  border-radius: 3px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-#todoList {
-  max-height: 380px;
-}
