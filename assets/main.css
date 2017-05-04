@@ -8,9 +8,9 @@ html {
 #clock {
   color: white;
   text-align: center;
-  margin-top: 10%;
-  font-size: 120px;
+  vertical-align: middle;
+  margin-top: 20%;
+  font-size: 150px;
   font-weight: bold;
   font-family: helvetica;
-  z-index: 2;
 }
