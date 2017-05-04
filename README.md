@@ -1,3 +1,5 @@
 # newTab
 beatiful newTab page
-support coming soon.
+
+# Compatibility
+Chrome, Internet Explorer, FireFox
