@@ -6,10 +6,8 @@ html {
   background-size: cover;
 }
 #clock {
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  display: flex;
+  justify-content: center;
   color: white;
   font-size: 150px;
   font-weight: bold;
