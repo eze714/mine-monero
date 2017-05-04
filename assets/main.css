@@ -8,7 +8,7 @@ html {
 #clock {
   color: white;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: text-middle;
   font-size: 150px;
   font-weight: bold;
   font-family: helvetica;
