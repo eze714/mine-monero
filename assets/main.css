@@ -1,8 +1,5 @@
-$images: ('https://s3-us-west-2.amazonaws.com/s.cdpn.io/55764/wdw201412872214626_6973885966_18.jpeg', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/55764/notebook.JPG',  'https://s3-us-west-2.amazonaws.com/s.cdpn.io/55764/me-sketch-no-fill.png');
-$img: nth($images, random(length($images)));
-
 html {
-  background: url($img) no-repeat center center fixed;
+  background: url(bg2.mp4) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
