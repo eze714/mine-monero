@@ -17,3 +17,13 @@ html {
   font-weight: bold;
   font-family: helvetica;
 }
+h1 {  
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  font-family: helvetica;
+}
