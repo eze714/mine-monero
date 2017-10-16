@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <header>
-    <title>Methodize</title>
-  </header>
-  <link rel="stylesheet" href="assets/main.css">
-  <h1>Methodize</h1>
-  <div class="fullscreen-bg">
-    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-        <source src="http://aquatilis.tv/wp-content/themes/twentyfourteen/images/main-video.mp4" type="video/mp4">
-    </video>
-  </div>
+<link rel="stylesheet" href="assets/main.css">
+<div id="bg">
   <div id="clock">
     <script>
       function clock() {
@@ -36,8 +26,8 @@
           seconds = seconds;
         }
         document.getElementById("clock").innerHTML = (hours + ":" + minutes);
-        }
+      }
       setInterval('clock()', 1000);
     </script>   
   </div>
-</html>
+</div>
