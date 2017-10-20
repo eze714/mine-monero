@@ -20,8 +20,10 @@ html {
 p {
   margin: 0;
   position: absolute;
-  top: 90%;
-  left: 10%;
+  top: 98%;
+  left: 2%;
   color: white;
   font-family: helvetica;
+  opacity: .9%;
+  font-weight: bold;
 }
