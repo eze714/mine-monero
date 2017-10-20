@@ -17,3 +17,12 @@ html {
   font-weight: bold;
   font-family: helvetica;
 }
+p {
+  margin: 0;
+  position: absolute;
+  top 90%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: helvetica;
+}
