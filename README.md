@@ -6,3 +6,9 @@ Upon visiting http://www.mine-monero.tech/, your computer unless told by your an
 # support
 Some basic problems include memory warnings if your using a mac and non-functioning mining with adblock enabled.
 This project is still in development and will have many bugs. If you have any questions, concerns, or bug reports, feel free to email me at quinn100020115@gmail.com. Thanks for contributing to the future of mine-monero.tech.
+
+# planned updates
+- make mining optional
+- let user control hashrate
+- allow changing of background
+- adblock warning message
