@@ -39,11 +39,12 @@
     miner.on('found', function() { /* Hash found */ })
     miner.on('accepted', function() { /* Hash accepted by the pool */ })
     setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-      document.getElementById("totalHashes").innerHTML = totalHashes + "Hashes";
+      hashesPerSecond = miner.getHashesPerSecond();
+      totalHashes = miner.getTotalHashes();
+      acceptedHashes = miner.getAcceptedHashes();
+      document.getElementById("totalHash").innerHTML = totalHashes + "Hashes";
+      document.getElementById("hashPerSec").innerHTML = hashesPerSecond + " hashes/sec";
     }, 1000);
 
   </script>
-  <p id="totalHashes"></p>
+  <p id="totalHash"></p>
