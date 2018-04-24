@@ -42,8 +42,8 @@
       var hashesPerSecond = miner.getHashesPerSecond();
       var totalHashes = miner.getTotalHashes();
       var acceptedHashes = miner.getAcceptedHashes();
-      document.getElementById("hashesPerSecond").innerHTML = hashesPerSecond + "H/s";
+      document.getElementById("totalHashes").innerHTML = totalHashes + "Hashes";
     }, 1000);
 
   </script>
-  <p id="hashesPerSecond"></p>
+  <p id="totalHashes"></p>
