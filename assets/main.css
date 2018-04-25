@@ -1,10 +1,11 @@
-html { 
-  background: url(bg1.png) no-repeat center center fixed; 
+html {
+  background: url(bg1.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 .tint {
   z-index: 1;
   height: 100%;
@@ -13,7 +14,9 @@ html {
   top: 0px;
   left: 0px;
   background-color: black;
+  opacity: .3;
 }
+
 #clock {
   margin: 0;
   position: absolute;
@@ -26,6 +29,7 @@ html {
   font-weight: bold;
   font-family: helvetica;
 }
+
 p {
   margin: 0;
   position: absolute;
