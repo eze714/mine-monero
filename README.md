@@ -9,7 +9,7 @@ There are no benefits to visiting this site unless your looking for a minimalist
 
 https://github.com/jimschubert/newtab-redirect
 
-#todo
+# todo
 - track each person's contributions [Queued]
 - possible splitting of mined coin [Queued]
 - hashrate leaderboard [Started]
