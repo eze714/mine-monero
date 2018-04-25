@@ -5,6 +5,15 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+.tint {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+}
 #clock {
   margin: 0;
   position: absolute;
