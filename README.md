@@ -1,5 +1,5 @@
 # mine-monero
-![Screenshot](https://i.imgur.com/v1Hky2q.png)
+![Screenshot](https://i.imgur.com/IwVZl9W.png)
 
 # about
 Simple and clean newTab page. Upon visiting https://quinnw.github.io/mine-monero/ or www.mine-monero.tech, your computer unless told by your antivirus or ad-blocker not to will begin mining Monero(XMR) which is a cryptocurrency.
