@@ -1,4 +1,4 @@
-# discontinued
+# mine-monero
 ![Screenshot](https://i.imgur.com/IwVZl9W.png)
 
 # about
